@@ -118,9 +118,9 @@ Do not include extra keys or text outside the JSON.
       // html: `...`
     });
 
-console.log("OPENAI_API_KEY", process.env.OPENAI_API_KEY);
+//console.log("OPENAI_API_KEY", process.env.OPENAI_API_KEY);
 
-console.log("rawContent: ", rawContent);
+//console.log("rawContent: ", rawContent);
 
     // // 6. Return a success response
     // return {

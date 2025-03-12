@@ -3,9 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <title>Feedback Form</title>
+   <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .imgbox {
+            display: grid;
+            height: 100%;
+        }
+        .center-fit {
+            max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+        }
+    </style>
 </head>
 <body>
-  <img src="title_image.png"/>
+ <div class="imgbox">
+    <img class="center-fit" src="title_image.png"/>
+ </div>
   <h1>Submit Your Feedback</h1>
   <form method="POST" action="/.netlify/functions/process">
     <label for="feedback">Your Message:</label><br/>

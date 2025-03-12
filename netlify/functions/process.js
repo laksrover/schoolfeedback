@@ -122,19 +122,25 @@ console.log("OPENAI_API_KEY", process.env.OPENAI_API_KEY);
 
 console.log("rawContent: ", rawContent);
 
-    // 6. Return a success response
+    // // 6. Return a success response
+    // return {
+    //   statusCode: 200,
+    //   body: JSON.stringify({
+    //     success: true,
+    //     categories,
+    //     offensive,
+    //     summary,
+    //     subject,
+    //     message: 'Feedback processed, AI-labeled, and email sent ' + TO_EMAIL
+    //   }),
+    // };
+
+        // 6. Return a success response
     return {
       statusCode: 200,
-      body: JSON.stringify({
-        success: true,
-        categories,
-        offensive,
-        summary,
-        subject,
-        message: 'Feedback processed, AI-labeled, and email sent ' + TO_EMAIL
+      body: 'Thank you! Your feedback has been submitted, processed, AI-labeled, and an email has been sent to ' + TO_EMAIL + '\n <a href="/index.html">Back to main page</a>'
       }),
     };
-
 
 
   } catch (err) {

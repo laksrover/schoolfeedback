@@ -138,7 +138,7 @@ console.log("rawContent: ", rawContent);
         // 6. Return a success response
     return {
       statusCode: 200,
-      body: 'Thank you! Your feedback has been submitted, processed, AI-labeled, and an email has been sent to ' + TO_EMAIL + '\n <a href="/index.html">Back to main page</a>'
+      body: 'Thank you! Your feedback has been submitted, processed, AI-labeled, and an email has been sent to ' + TO_EMAIL + ' ' + /index.html
       }),
     };
 
